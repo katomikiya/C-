@@ -12,7 +12,7 @@ namespace Sample101
         private int age = 0;
 
         // コンストラクタ
-        public Person() : this("名前なし", 0)  
+        public Person() : this("名前なし", 0)
         {
             Console.WriteLine("引数無しコンストラクタ");
         }
