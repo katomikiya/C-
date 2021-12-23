@@ -6,18 +6,16 @@ using System.Threading.Tasks;
 
 namespace Sample401
 {
-    internal class Sparrow
+    internal class Sparrow : Bird
     {
-        private string name = "すずめ";
-
-        public void sing()
+        // コンストラクタ
+        public Sparrow() : base("すずめ")
+        {
+        }
+        // オーバーライド
+        public override void sing()
         {
             Console.WriteLine("ちゅんちゅん");
-        }
-        // プロパティ
-        public string Name
-        {
-            get { return name; }
         }
     }
 }

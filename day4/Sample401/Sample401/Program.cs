@@ -10,8 +10,8 @@ namespace Sample401
     {
         static void Main()
         {
-            Crow crow = new Crow();
-            Sparrow sparrow = new Sparrow();
+            Bird crow = new Crow();
+            Bird sparrow = new Sparrow();
 
             Console.Write(crow.Name + "：");
             crow.sing();

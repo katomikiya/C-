@@ -6,18 +6,16 @@ using System.Threading.Tasks;
 
 namespace Sample401
 {
-    internal class Crow
+    internal class Crow : Bird
     {
-        private string name = "カラス";
-
-        public void sing()
+        // コンストラクタ
+        public Crow() :base("カラス")
+        {
+        }
+        // オーバーライド
+        public override void sing()
         {
             Console.WriteLine("カーカー");
-        }
-        // プロパティ
-        public string Name
-        {
-            get { return name; }
         }
     }
 }
