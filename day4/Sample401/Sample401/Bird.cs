@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sample401
 {
+    // 抽象クラス
     abstract class Bird
     {
         private string name;
