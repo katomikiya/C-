@@ -11,6 +11,7 @@ namespace Sample103
         static void Main()
         {
             Dummy dummy = new Dummy();
+            GC.Collect();
         }
     }
 }
