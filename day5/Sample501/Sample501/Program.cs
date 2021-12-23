@@ -16,11 +16,11 @@ namespace Sample501
             cp.SendEmail("fuga@email.com");
 
             // Phoneインターフェースでインスタンスにアクセス
-            Phone phone = (Phone)cp;
+            Phone phone = (Phone)cp;    // CellPhone型インスタンスcpをPhone型にキャスト
             phone.call("052-111-2222");
 
             // Emailインターフェースでインスタンスにアクセス
-            Email mail = (Email)cp;
+            Email mail = (Email)cp;     // CellPhone型インスタンスcpをEmail型にキャスト
             mail.SendEmail("bar@email.com");
         }
     }
