@@ -8,7 +8,7 @@ namespace Sample303
 {
     internal class Parent
     {
-        public void foo()
+        public virtual void foo()   // 仮想関数としてサブクラスのメソッドが実行される
         {
             Console.WriteLine("親クラスのfoo()メソッド");
         }

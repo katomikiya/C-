@@ -8,7 +8,7 @@ namespace Sample303
 {
     internal class Child : Parent
     {
-        public void foo()
+        public override void foo()  // 親クラスのメソッドをオーバーライド
         {
             Console.WriteLine("子クラスのfoo()メソッド");
         }
