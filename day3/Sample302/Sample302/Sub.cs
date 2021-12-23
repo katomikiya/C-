@@ -12,9 +12,9 @@ namespace Sample302
         {
             Console.WriteLine("Subクラスのコンストラクタ（引数無し）");
         }
-        public Sub(int param) : base(param)
+        public Sub(int num) : base(num) // 引数有の親クラスコンストラクタを呼び出し
         {
-            Console.WriteLine("Subクラスのコンストラクタ（引数：num = {0}）", param);
+            Console.WriteLine("Subクラスのコンストラクタ（引数：num = {0}）", num);
         }
         
         ~Sub()
