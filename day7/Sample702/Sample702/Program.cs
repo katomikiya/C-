@@ -8,6 +8,7 @@ namespace Sample702
 {
     public class Program
     {
+        // デリゲートを宣言
         delegate void Action(int a);
 
         static void Func1(int a)
@@ -27,9 +28,10 @@ namespace Sample702
 
         static void Main()
         {
+            // デリゲートオブジェクトを生成し、メソッドを設定
             Action act = new Action(Func1);
             
-            act += new Action(Func2);
+            act += new Action(Func2);   // メソッドを追加
             act += new Action(Func3);
 
             act(3);
