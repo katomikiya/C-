@@ -26,6 +26,7 @@ namespace Sample704
 
             if (i < nums.Length)
             {
+            // 例外を発生させる。
                 throw new IndexOutOfRangeException();
             }
             return nums[i];
